@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding= "utf-8"?>
+
+<openerp>
+  <data>
+    <record id="customer_tax" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="domain"> [('user_id','='uid)]</field>
+        <field name="arch_base" type="xml">
+          <field name="lang" position="after">
+            <field name="tax" attrs="{'invisible': [('is_company','=', False)]}"/>
+            <field name="com" attrs="{'invisible': [('is_company','=', False)]}"/>/>
+          </field>
+        </field>
+    </record>
+  </data>
+</openerp>
