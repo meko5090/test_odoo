@@ -12,6 +12,8 @@
 
     'author': "Mahmoud",
     'website': "http://www.magdco.com",
+    "price": 9.00,
+    "currency": "EUR",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
